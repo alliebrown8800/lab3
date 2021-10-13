@@ -29,12 +29,12 @@ class Joystick:
   def getX(self):
     return(self.adc.read(1))
   def getY(self):
-    return(self.adc.read(2))
+    return(self.adc.read(0))
 
 joymove = Joystick(0x48)
 
 try:
-  
+
   while True:
     x = joymove.getX()
     y = joymove.getY()
