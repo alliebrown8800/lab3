@@ -38,7 +38,7 @@ try:
   while True:
     x = joymove.getX()
     y = joymove.getY()
-    print(x, " , ", y)
+    print(x, y)
     time.sleep(.1)
 
 except KeyboardInterrupt: 
